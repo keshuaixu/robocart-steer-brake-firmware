@@ -1,0 +1,20 @@
+#ifndef ROBOCART_CAN_ID_H
+#define ROBOCART_CAN_ID_H
+typedef uint32_t can_id_t;
+const can_id_t CANID_EVERYONE_ESTOP  = 0;
+const can_id_t CANID_EVERYONE_SYSTEM_STATE  = 0x1001;
+const can_id_t CANID_STATESERVER_STEERBRAKE_ALIVE  = 0x1101;
+const can_id_t CANID_STEERBRAKE_STEER_INPUT_HUMAN  = 0x2001;
+const can_id_t CANID_STEERBRAKE_STEER_INPUT_AUTONOMOUS  = 0x2011;
+const can_id_t CANID_SENSOR_STEER_SENSOR_REPORT  = 0x2101;
+
+
+
+const uint8_t SYSTEM_STATE_STOP_EVERYTHING = 0;
+const uint8_t SYSTEM_STATE_STOP_MOTOR = 1;
+const uint8_t SYSTEM_STATE_AUTONOMOUS = 2;
+const uint8_t SYSTEM_STATE_HUMAN = 3;
+const uint8_t SYSTEM_STATE_WAIT_FOR_START= 4;
+
+
+#endif
